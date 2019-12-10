@@ -73,7 +73,7 @@ public:
 
 protected:
   vtkFrenetSerretFrame();
-  ~vtkFrenetSerretFrame();
+  ~vtkFrenetSerretFrame() override;
 
   virtual int RequestData(vtkInformation *, vtkInformationVector **, vtkInformationVector *) override;
   virtual int FillInputPortInformation(int port, vtkInformation *info) override;
